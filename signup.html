@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKMYCARE Header and Footer</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .signup-container {
+    background-color: #1f1f1f;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #f1f1f1;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #ccc;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #333;
+    color: #eaeaea;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #4CAF50;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-link a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+   
+    <div class="header">
+        <div class="logo">
+            <a href="main.html"><h1>BOOKMYCARE</h1></a>
+        </div>   
+        <div class="nav-links" style="margin-left:100px ;">
+            <a href="main.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Service.html">Services</a>
+            <a href="Contact.html">Contact</a>
+            <a href="login.html">login / </a>
+            <a href="signup.html" style="margin-left: -67px;">Sign-up</a>
+            
+        </div>
+    </div>
+    
+    <br>
+
+    <!-- About page info  -->
+    <div class="signup-container" style="margin-left: 530px;">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+            <div class="login-link">
+                <p style="color: white;">Already have an account? <a href="login.html">Login here</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            // Optionally, store any necessary data (e.g., in localStorage)
+            // localStorage.setItem('redirectAfterSignup', 'booknow'); 
+
+            // Redirect to main page
+            window.location.href = 'main1.html';
+        });
+    </script>
+    
+
+    <!-- Footer -->
+     
+    
+
+    <div class="footer">
+        <div class="beffot" >
+            <h1 style="margin:0px; font-size: 36px; color: #000; margin-bottom: 15px;">BOOKMYCARE</h1>
+            
+        </div>
+        
+        <div class="social-links">
+            
+            <h2 style="margin-top: 35px;">We are social!</h2>
+            <p>Follow us on:</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/bookmycare/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 30px;">
+                </a>
+                <a href="https://www.facebook.com/bookmycare/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 30px;">
+                </a>
+                <a href="https://www.youtube.com/channel/UCquWa-2pacFeHEsmToMd0Dw" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 30px; margin-top: 5px;">
+                </a>
+                <a href="https://www.linkedin.com/company/bookmycare/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" style="width: 30px;">
+                </a>
+               
+               
+            </div>
+            <br>
+            Email us at: <a href="mailto:bookmycare@gmail.com" style="color: #f8c500;"> bookmycare@gmail.com</a>
+ 
+        </div>
+        
+        <div class="footer-content">
+            
+            <div class="footer-section quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="/faqs">FAQs</a></li><br>
+                    <li><a href="/bookmycare-blogs">BOOKMYCARE Blogs</a></li><br>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li><br>
+                    <li><a href="/terms-and-conditions">Terms & Conditions</a></li><br>
+                    <li><a href="/refund-policy">Refund & Cancellation Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="vertical-line"></div>
+            <div class="horizontal-line"></div> 
+
+            <div class="footer-section discover-bookmycare">
+                <h2>Discover BOOKMYCARE</h2>
+                <ul>
+                    <li><a href="/about-us">About Us</a></li><br>
+                    <li><a href="/careers">Careers</a></li><br>
+                    <li><a href="/store-locator">Store Locator</a></li><br>
+                    <li><a href="/contact-us">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="vertical-line"></div>
+            <div class="horizontal-line"></div> 
+
+            <div class="footer-section subscription email-subscription">
+                <h2>Stay Updated</h2>
+                <p>Please enter your email to receive updates and notifications:</p>
+                <br>
+                <input type="email" placeholder="Enter your email address">
+                <br><br>
+                <button>SUBSCRIBE</button>
+                <p style="font-size: 12px; color: #ccc; margin-top: 8px;">Subscribe to receive news every day!</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="horizontal-line"></div>
+
+        <p class="beffot">© 2024 BOOKMYCARE. All rights reserved.</p>
+    </div>
+
+   
+
+            
+
+</body>
+</html>

@@ -1,0 +1,866 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+}
+
+/* Header Section start */
+
+.header {
+    background-color: #001225;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 2px solid #f8c500;
+}
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f8c500;
+}
+.nav-links {
+    margin-left: 690px;
+    display: flex;
+    gap: 40px;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links a:hover {
+    color: #f8c500;
+}
+.nav-icons {
+    display: flex;
+    gap: 15px;
+}
+.nav-icons a {
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+}
+.nav-icons a:hover {
+    color: #f8c500;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+}
+ul li {
+position: relative;
+display: inline-block;
+}
+
+ul li ul.dropdown {
+display: none;
+position: absolute;
+top: -10px;
+right: 0;
+background: #22438C;
+z-index: 999;
+width: 200px;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+opacity: 0;
+transition: opacity 0.3s ease-in-out;
+}
+
+ul li:hover ul.dropdown {
+display: block;
+opacity: 1;
+}
+
+ul li:hover ul.dropdown {
+top: calc(100% + 5px);
+}
+
+ul li:hover ul.dropdown {
+max-height: calc(100vh - 50px);
+overflow-y: auto;
+}
+
+ul li ul.dropdown li {
+display: block;
+padding: 12px 20px;
+background: #22438C;
+border-bottom: 1px solid #1a2b58;
+transition: background 0.3s ease;
+}
+
+ul li ul.dropdown li:last-child {
+border-bottom: none;
+}
+
+ul li a:hover {
+background: #112C66;
+}
+
+ul li ul.dropdown li a {
+color: #fff;
+font-size: 16px;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+ul li ul.dropdown li a:hover {
+color: #f8c500;
+background: #112C66;
+}
+
+.nav-links a {
+display: inline-block;
+padding: 10px 15px;
+text-decoration: none;
+color: #fff;
+vertical-align: middle;
+}
+
+.nav-links ul {
+margin: 0;
+padding: 0;
+}
+
+ul li a {
+display: inline-block;
+}
+
+ul li a img {
+margin-right: 10px;
+vertical-align: middle;
+}
+
+ul li a:hover {
+background: #112C66;
+}
+
+ul li a {
+padding-left: 10px;
+}
+
+/* Header section End  */
+
+/* Footer Section  start */
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+.social-links {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #999;
+}
+.social-links h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(255, 26, 26);
+    margin-bottom: 8px;
+    white-space: nowrap; 
+}
+.social-links h2 {
+    font-size: 20px;
+    color: white;
+}
+.social-links p {
+    font-size: 14px;
+    color: #ccc;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 8px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin-top: 15px; 
+}
+.footer-section {
+    flex: 1;
+    min-width: 200px; 
+    margin: 8px; 
+    text-align: center; 
+}
+h2 {
+    font-size: 18px;
+    color: #f8c500;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 14px;
+    color: #ccc;
+}
+ul a {
+    text-decoration: none;
+    color: #ccc;
+}
+.email-subscription {
+    text-align: center; 
+}
+.email-subscription input {
+    padding: 8px;
+    width: 80%;
+    max-width: 250px; 
+    border: 1px solid #ccc;
+    border-radius: 0;
+    background-color: #222;
+    color: #fff;
+}
+.email-subscription button {
+    padding: 8px 14px;
+    background-color: #f8c500;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+.vertical-line {
+    width: 1px;           
+    height: 200px;        
+    background-color: rgb(129, 129, 129); 
+    margin: 0 15px; 
+}
+.horizontal-line {
+    width: 100%; 
+    height: 1px; 
+    background-color: rgb(129, 129, 129); 
+    margin: 15px 0; 
+}
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px;
+    }
+    .social-links h1 {
+        font-size: 28px;
+    }
+    .social-links h2 {
+        font-size: 16px;
+    }
+    .social-icons {
+        flex-wrap: wrap;
+    }
+    .footer-content {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .footer-section {
+        width: 100%; 
+        margin: 5px 0;
+    }
+    .email-subscription input {
+        width: 100%; 
+    }
+    .vertical-line {
+        display: none; 
+    }
+    .horizontal-line {
+        display: block; 
+    }
+}
+@media (min-width: 769px) {
+    .vertical-line {
+        display: block; 
+    }
+    .horizontal-line {
+        display: none; 
+    }
+}
+.beffot{
+    margin-bottom:-20px;
+    text-align: center;
+    margin-bottom: -30px;
+    background-color: #007bff;
+    
+    
+}
+/* footer section end  */
+
+
+/* contact page  */
+.container {
+    padding: 20px;
+    max-width: 750px;
+    margin: 20px auto;
+    background-color: #1c1c1c; /* Dark gray container background */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #1e90ff; /* Bright blue for headings */
+}
+
+label {
+    color: #ccc;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], textarea,input[type="number"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #111;
+    color: #ccc;
+}
+
+input[type="submit"] {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0b6bc7;
+}
+
+/* contact page end  */
+
+
+/* about page start  */
+.about {
+    padding: 20px;
+    background-color: #1e1e1e; /* Dark background */
+    color: #e0e0e0; /* Light text color for contrast */
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.about h2 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #cccccc; /* Slightly lighter text for better readability */
+}
+
+.about ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.about li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-left: 25px; /* Adjusted padding for list alignment */
+    position: relative;
+    color: #e0e0e0;
+}
+
+.about li::before {
+    content: '\2022'; /* Unicode for bullet symbol */
+    color: #4CAF50; /* Accent color for bullet */
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.about .contact-info {
+    margin-top: 20px;
+}
+
+.about .contact-info h3 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.about .contact-info p {
+    margin: 5px 0;
+    color: #b3b3b3; /* Slightly lighter color for contact text */
+}
+
+/* about page end  */
+
+
+/* Services Section */
+.services-container {
+    margin: 30px auto 80px auto; /* Increased bottom margin to add space */
+    padding: 40px 20px;
+    max-width: 1200px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+    text-align: center;
+    color: #1e90ff;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.service-item {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    background-color: #333;
+}
+
+.service-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover img {
+    transform: scale(1.05);
+}
+
+.service-item h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.service-item p {
+    color: #bbb;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.service-item a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    display: inline-block;
+    border: 2px solid #1e90ff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.service-item a:hover {
+    background-color: #1e90ff;
+    color: #fff;
+}
+/* Service page end  */
+
+/* Appoinment page video call  */
+  
+
+
+.videocall-container {
+    width: 100%;
+    max-width: 700px; /* Increased maximum width for horizontal expansion */
+    padding: 20px;
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.doctor-selection, .patient-details {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#doctor {
+    width: 100%;
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+.date-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nav-button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 12px; /* Slightly increased gap for better spacing */
+    margin-bottom: 20px;
+}
+
+.calendar .day {
+    padding: 15px; /* Increased padding for a more spacious look */
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+
+.calendar .day.available {
+    background-color: #4caf50;
+}
+
+.calendar .day.unavailable {
+    background-color: #e74c3c;
+}
+
+.calendar .day.selected {
+    background-color: #3498db;
+}
+
+.patient-details label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.patient-details input {
+    width: 100%;
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+.time-slots {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.time-slots h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.time-slots button {
+    display: inline-block;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px 5px 0 0;
+    font-size: 0.9em;
+}
+
+.time-slots button.selected {
+    background-color: #3498db;
+}
+/* appoinent page video call end  */
+
+
+/* main page start  */
+.appointment-section-bg {
+    position: relative;
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 15px;
+    margin: 30px 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.appointment-section-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://plus.unsplash.com/premium_photo-1681843126728-04eab730febe?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVkaWNhbCUyMHRlYW18ZW58MHx8MHx8fDA%3D') center 40%/150% no-repeat;
+    filter: brightness(0.40);
+    z-index: -1;
+}
+
+.appointment-section-bg h1 {
+    font-size: 56px;
+    margin-bottom: 10px;
+}
+
+.appointment-section-bg p {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.book-now-button-bg {
+    padding: 18px 35px;
+    font-size: 22px;
+    font-weight: bold;
+    background: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.book-now-button-bg:hover {
+    background: #fff;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+.review-container {
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    
+    }
+    
+    .review-intro {
+    color: #f8c500;
+    font-size: 33px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-style: bold;
+    
+    }
+    
+    .reviews {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px 0;
+    
+    }
+    
+    .review {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+    }
+    
+    .review-image {
+    background-color: #2b2b2b;
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+    }
+    
+    .review-name {
+    font-weight: bold;
+    color: #783f3f;
+    margin-top: 15px;
+    }
+    
+    .review-role {
+    color: #888;
+    font-size: 14px;
+    }
+    
+    .review-text {
+    font-size: 14px;
+    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+    
+    .review-rating {
+    color: #FFDF00;
+    }
+    .rev{
+    border: 2px solid white;
+    border-radius: 2px;
+    background-color: rgba(55, 47, 47, 0.75);
+    }
+    .testi{
+    text-align: center;
+    margin-bottom: -60px;
+    font-size: 50px;
+    color: white;
+    }
+    .doctors-section {
+    padding: 20px;
+    background-color: #000000;
+    text-align: center;
+    }
+    
+    .doctors-section h2 {
+    margin-top: -25px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    }
+    
+    .doctor-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    }
+    
+    .doctor-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+    }
+    
+    .doctor-card:hover {
+    transform: translateY(-5px);
+    }
+    
+    .doctor-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    }
+    
+    .doctor-card h3 {
+    font-size: 22px;
+    color: #444;
+    margin: 10px 0 5px;
+    }
+    
+    .doctor-card p {
+    color: #666;
+    margin-bottom: 15px;
+    }
+    
+    .book-now-btn {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+    }
+    
+    .book-now-btn:hover {
+    background: #0056b3;
+    }
+    /* Profile dropdown container */
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Profile image styling */
+.profile-img {
+    width: 28px;  /* Adjust as needed */
+    height: 30px;  /* Adjust as needed */
+    border-radius: 50%;  /* Makes the image round */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);  /* Slight zoom effect on hover */
+}
+
+/* Dropdown menu container */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #2a2a2a;  /* Dark background for better contrast */
+    min-width: 200px;  /* Increased width for better legibility */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;  /* Rounded corners */
+    overflow: hidden;  /* Prevents overflow */
+    z-index: 1;
+    opacity: 0;  /* Initially hidden */
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.profile-dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;  /* Fade-in effect */
+    visibility: visible;
+}
+
+/* Styling for dropdown links */
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    background: linear-gradient(45deg, #20177f, #17389c);  /* Gradient background */
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+    background: #ff9800;  /* Lighter color on hover */
+    transform: translateX(5px);  /* Slide effect on hover */
+    color: black;
+}
+
+/* Optional: Add a little padding between the links */
+.dropdown-content a + a {
+    border-top: 1px solid #555;  /* Divider between links */
+}
+

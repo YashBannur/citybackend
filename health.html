@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKMYCARE Header and Footer</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        /* Health Monitoring page container */
+.Health_pg {
+    background-color: #121212; /* Dark background */
+    color: #fff; /* White text color */
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* Header section */
+.Health_pg-header h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff; /* Accent color */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Health monitoring form container */
+.Health_pg-form {
+    background-color: #1e1e1e; /* Dark background for form */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Form label */
+.Health_pg-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ffcc00; /* Yellow label text */
+}
+
+/* Form input fields */
+.Health_pg-form input[type="text"],
+.Health_pg-form input[type="number"],
+.Health_pg-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #333; /* Dark background for inputs */
+    color: #fff; /* White text color */
+    border: 1px solid #ffffff; /* Border color */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button styling */
+.submit-btn {
+    background-color: #001eff; /* Button background */
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #ffcc00; /* Hover effect */
+    color: #121212; /* Text color on hover */
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+   
+    <div class="header">
+        <div class="logo">
+            <a href="main1.html"><h1>BOOKMYCARE</h1></a>
+        </div>   
+        <div class="nav-links" style="margin-left:100px;">
+            <a href="main1.html">Home</a>
+            <a href="About copy.html">About</a>
+            <a href="Service copy.html">Services</a>
+            <a href="contact copy.html">Contact</a>
+            
+            <!-- Image and dropdown menu -->
+            <div class="profile-dropdown" style="margin-left: -20px; margin-top: 3px;">
+                <img src="menu.png" alt="Profile" class="profile-img">
+                <div class="dropdown-content">
+                    <a href="myprofile.html">My Profile</a>
+                    <a href="settings.html">Settings</a>
+                    <a href="logout.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- online prescription  -->
+    <div class="Health_pg">
+        <div class="Health_pg-header">
+            <h2>Health Monitoring</h2>
+        </div>
+    
+        <div class="Health_pg-form">
+            <form action="#" method="POST">
+                <label for="patient-name">Patient Name:</label>
+                <input type="text" id="patient-name" name="patient-name" required>
+    
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+    
+                <label for="heart-rate">Heart Rate (bpm):</label>
+                <input type="number" id="heart-rate" name="heart-rate" required>
+    
+                <label for="blood-pressure">Blood Pressure (mmHg):</label>
+                <input type="text" id="blood-pressure" name="blood-pressure" placeholder="e.g., 120/80" required>
+    
+                <label for="body-temperature">Body Temperature (°C):</label>
+                <input type="number" id="body-temperature" name="body-temperature" step="0.1" required>
+    
+                <label for="oxygen-level">Oxygen Level (%):</label>
+                <input type="number" id="oxygen-level" name="oxygen-level" required>
+    
+                <label for="additional-notes">Additional Notes:</label>
+                <textarea id="additional-notes" name="additional-notes" rows="4"></textarea>
+    
+                <button type="submit" class="submit-btn">Submit Health Data</button>
+            </form>
+        </div>
+    </div>
+    
+    
+    
+
+
+    <!-- Footer -->
+     
+    
+
+    <div class="footer">
+        <div class="beffot" >
+            <h1 style="margin:0px; font-size: 36px; color: #000; margin-bottom: 15px;">BOOKMYCARE</h1>
+            
+        </div>
+        
+        <div class="social-links">
+            
+            <h2 style="margin-top: 35px;">We are social!</h2>
+            <p>Follow us on:</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/bookmycare/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 30px;">
+                </a>
+                <a href="https://www.facebook.com/bookmycare/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 30px;">
+                </a>
+                <a href="https://www.youtube.com/channel/UCquWa-2pacFeHEsmToMd0Dw" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" style="width: 30px; margin-top: 5px;">
+                </a>
+                <a href="https://www.linkedin.com/company/bookmycare/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" style="width: 30px;">
+                </a>
+               
+               
+            </div>
+            <br>
+            Email us at: <a href="mailto:bookmycare@gmail.com" style="color: #f8c500;"> bookmycare@gmail.com</a>
+ 
+        </div>
+        
+        <div class="footer-content">
+            
+            <div class="footer-section quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="/faqs">FAQs</a></li><br>
+                    <li><a href="/bookmycare-blogs">BOOKMYCARE Blogs</a></li><br>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li><br>
+                    <li><a href="/terms-and-conditions">Terms & Conditions</a></li><br>
+                    <li><a href="/refund-policy">Refund & Cancellation Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="vertical-line"></div>
+            <div class="horizontal-line"></div> 
+
+            <div class="footer-section discover-bookmycare">
+                <h2>Discover BOOKMYCARE</h2>
+                <ul>
+                    <li><a href="/about-us">About Us</a></li><br>
+                    <li><a href="/careers">Careers</a></li><br>
+                    <li><a href="/store-locator">Store Locator</a></li><br>
+                    <li><a href="/contact-us">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="vertical-line"></div>
+            <div class="horizontal-line"></div> 
+
+            <div class="footer-section subscription email-subscription">
+                <h2>Stay Updated</h2>
+                <p>Please enter your email to receive updates and notifications:</p>
+                <br>
+                <input type="email" placeholder="Enter your email address">
+                <br><br>
+                <button>SUBSCRIBE</button>
+                <p style="font-size: 12px; color: #ccc; margin-top: 8px;">Subscribe to receive news every day!</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="horizontal-line"></div>
+
+        <p class="beffot">© 2024 BOOKMYCARE. All rights reserved.</p>
+    </div>
+
+   
+
+            
+
+</body>
+</html>
